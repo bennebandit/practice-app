@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Random Excuse Generator</title>
+    <title>Tilfældig Undskyldningsgenerator</title>
     <style>
       * {
         box-sizing: border-box;
@@ -124,45 +124,45 @@
   <body>
     <main class="card">
       <header>
-        <h1 class="title">Random Excuse Generator</h1>
+        <h1 class="title">Tilfældig undskyldningsgenerator</h1>
         <p class="subtitle">
-          Click the button whenever you need a (totally valid) excuse.
+          Klik på knappen, når du har brug for en (helt legitim) undskyldning.
         </p>
       </header>
 
       <section class="excuse" id="excuse-box" aria-live="polite">
-        <div class="excuse-label">Your excuse</div>
+        <div class="excuse-label">Din undskyldning</div>
         <div id="excuse-text">
-          My dog ate the code and then the backup.
+          Min hund spiste koden og derefter backup’en.
         </div>
       </section>
 
       <div class="controls">
         <button id="new-excuse">
           <span class="icon">🎲</span>
-          <span>Give me another</span>
+          <span>Giv mig en ny</span>
         </button>
-        <span class="hint">Tip: Works best before deadlines.</span>
+        <span class="hint">Tip: Virker bedst lige før en deadline.</span>
       </div>
     </main>
 
     <script>
       const excuses = [
-        "My internet was down, but only for the exact 10 minutes I needed.",
-        "The code worked perfectly on my machine. I think the server is just shy.",
-        "I was debugging, blinked once, and suddenly it was tomorrow.",
-        "The meeting could have been an email and the email could have been silence.",
-        "My coffee hadn't compiled yet.",
-        "I accidentally used production as a staging environment. Again.",
-        "The bug is actually a surprise feature with trust issues.",
-        "I wrote tests, but the tests are on vacation.",
-        "The merge conflict and I agreed to disagree.",
-        "I was waiting for the stars to align with the CI pipeline.",
-        "It passed locally but failed in reality.",
-        "I thought 'rm -rf' meant 'refactor mildly'.",
-        "The documentation said 'left as an exercise for the reader' and I respected that.",
-        "I was doing performance optimization in my head.",
-        "The requirements changed while I was typing them."
+        "Mit internet var nede, men kun præcis de 10 minutter, hvor jeg skulle arbejde.",
+        "Koden virkede perfekt på min maskine. Jeg tror bare serveren er genert.",
+        "Jeg sad og fejlsøgte, blinkede én gang, og pludselig var det i morgen.",
+        "Mødet kunne have været en mail, og mailen kunne have været stilhed.",
+        "Min kaffe var ikke kompileret endnu.",
+        "Jeg kom til at bruge produktion som testmiljø. Igen.",
+        "Fejlen er faktisk en overraskelsesfeature med tillidsproblemer.",
+        "Jeg skrev tests, men testene har taget ferie.",
+        "Merge-konflikten og jeg blev enige om at være uenige.",
+        "Jeg ventede på, at stjernerne stod på linje med CI-pipelinen.",
+        "Det bestod alle tests lokalt, men fejlede i virkeligheden.",
+        "Jeg troede 'rm -rf' betød 'refaktorer lidt pænt'.",
+        "Dokumentationen sagde 'udeladt som en øvelse til læseren', og det respekterede jeg.",
+        "Jeg lavede performanceoptimering i hovedet.",
+        "Kravene ændrede sig, mens jeg skrev dem ned."
       ];
 
       const excuseText = document.getElementById("excuse-text");

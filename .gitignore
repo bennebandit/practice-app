@@ -1,0 +1,7 @@
+# Ignore local environment files with API keys and secrets
+.env
+.env.*
+
+# Node modules (if you add a build tool later)
+node_modules/
+
